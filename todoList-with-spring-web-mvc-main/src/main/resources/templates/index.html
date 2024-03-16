@@ -23,7 +23,7 @@
 <header>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-body">
-        <div class="container-fluid">
+        <div class="container">
             <button
                     data-mdb-collapse-init
                     class="navbar-toggler"
@@ -74,7 +74,7 @@
         </form>
     </section>
 </header>
-<table class="table align-middle mb-0 bg-white p-20">
+<table class="table align-middle mb-4  p-8">
     <thead class="bg-light">
     <tr>
         <th>ID</th>
@@ -82,7 +82,10 @@
         <th>Description</th>
         <th>IsDone</th>
         <th>CreatedAt</th>
-    </tr>
+        <th>Action</th>
+     </tr>
+
+
     </thead>
     <tbody>
     <tr th:each="todos:${todo}">
